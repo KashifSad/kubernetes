@@ -32,13 +32,11 @@ spec:
             command:
             - cat
             - /usr/share/nginx/html/index.html
-
-          initialDelaySeconds: 10
+	  initialDelaySeconds: 10
           periodSeconds: 10
           timeoutSeconds: 5
 	  failureThreshold: 2
 	  successThreshold: 2
-
 	livenessProbe:
 	  exec:
 	    command:
